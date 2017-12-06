@@ -105,3 +105,5 @@ if var in lista1:
             else:
                 ip=ip[7:]
             commands.getoutput('sed -i /'+ip+'/d db.inverso')
+            
+commands.getoutput('service bind9 restart')
